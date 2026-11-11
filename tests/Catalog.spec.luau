@@ -1,0 +1,25 @@
+local Catalog = require("../src/App/Catalog")
+
+return function(t)
+	t.case("assignShortcut sets and clears", function()
+		local map = Catalog.assignShortcut({}, "a", "G")
+		t.eq(map.a, "G")
+		t.eq(Catalog.assignShortcut(map, "a", nil).a, nil)
+	end)
+	t.case("assignShortcut swaps on conflict", function()
+		local map = Catalog.assignShortcut({ a = "G", b = "H" }, "a", "H")
+		t.eq(map.a, "H")
+		t.eq(map.b, "G")
+	end)
+	t.case("assignShortcut frees the other when nothing to swap", function()
+		local map = Catalog.assignShortcut({ b = "H" }, "a", "H")
+		t.eq(map.a, "H")
+		t.eq(map.b, nil)
+	end)
+	t.case("capturable rejects modifiers and Unknown", function()
+		for _, name in { "LeftShift", "RightControl", "LeftAlt", "RightSuper", "Unknown" } do
+			t.eq(Catalog.capturable(name), false)
+		end
+		t.eq(Catalog.capturable("G"), true)
+	end)
+end

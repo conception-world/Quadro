@@ -1,0 +1,406 @@
+{
+	"version": 1,
+	"source": {
+		"fileKey": "sample",
+		"nodeId": "1:1",
+		"name": "Sample",
+		"exportedAt": "1970-01-01T00:00:00.000Z"
+	},
+	"root": {
+		"id": "1:1",
+		"name": "Sample",
+		"box": [
+			0,
+			0,
+			1920,
+			1080
+		],
+		"kind": "frame",
+		"fill": [
+			{
+				"solid": "0d0d1a",
+				"a": 1
+			}
+		],
+		"clip": true,
+		"children": [
+			{
+				"id": "1:3",
+				"name": "Title",
+				"box": [
+					40,
+					20,
+					300,
+					60
+				],
+				"kind": "text",
+				"text": {
+					"chars": "Upgrades",
+					"font": {
+						"family": "Montserrat",
+						"weight": 900,
+						"italic": false
+					},
+					"size": 48,
+					"color": "ffffff",
+					"a": 1,
+					"align": [
+						"LEFT",
+						"TOP"
+					],
+					"stroke": {
+						"color": "000000",
+						"a": 1,
+						"weight": 2
+					}
+				}
+			},
+			{
+				"id": "1:4",
+				"name": "Rich",
+				"box": [
+					40,
+					90,
+					300,
+					30
+				],
+				"kind": "text",
+				"text": {
+					"chars": "Mixed",
+					"font": {
+						"family": "Montserrat",
+						"weight": 800,
+						"italic": true
+					},
+					"size": 20,
+					"color": "ffcc00",
+					"a": 1,
+					"align": [
+						"CENTER",
+						"CENTER"
+					]
+				}
+			},
+			{
+				"id": "1:7",
+				"name": "Icon",
+				"box": [
+					360,
+					160,
+					48,
+					48
+				],
+				"kind": "image",
+				"fill": [
+					{
+						"image": "c5982ace24b206d81c2d23d3e9a17a2323ec590e79c10538984f850b7221894f",
+						"scale": "fill"
+					}
+				]
+			},
+			{
+				"id": "1:8",
+				"name": "Card",
+				"box": [
+					40,
+					140,
+					400,
+					120
+				],
+				"kind": "list",
+				"fill": [
+					{
+						"linear": {
+							"rotation": 90,
+							"stops": [
+								[
+									0,
+									"1a1a33",
+									1
+								],
+								[
+									1,
+									"4d3399",
+									1
+								]
+							]
+						}
+					}
+				],
+				"stroke": {
+					"paint": {
+						"solid": "ffffff",
+						"a": 0.3
+					},
+					"weight": 1.5,
+					"align": "I"
+				},
+				"radius": 12,
+				"effects": [
+					{
+						"dropShadow": {
+							"color": "000000",
+							"a": 0.4,
+							"x": 0,
+							"y": 4,
+							"blur": 8,
+							"spread": 0
+						}
+					}
+				],
+				"layout": {
+					"dir": "H",
+					"gap": 8,
+					"padding": [
+						4,
+						4,
+						4,
+						4
+					],
+					"align": [
+						"MIN",
+						"CENTER"
+					],
+					"wrap": false
+				},
+				"component": {
+					"key": "card-key",
+					"name": "Card",
+					"variant": {},
+					"main": false
+				},
+				"children": [
+					{
+						"id": "1:5",
+						"name": "Glow",
+						"box": [
+							10,
+							10,
+							140,
+							80
+						],
+						"sizing": {
+							"h": "fixed",
+							"v": "fixed"
+						},
+						"kind": "image",
+						"fill": [
+							{
+								"image": "9909ec831e2cf6d0c73fb5480f31945a80987a13faee005704166cb53a26ceca",
+								"scale": "fill"
+							}
+						]
+					},
+					{
+						"id": "1:6",
+						"name": "Spinner",
+						"box": [
+							254.142,
+							24.495,
+							40,
+							40
+						],
+						"rotation": 345,
+						"sizing": {
+							"h": "fixed",
+							"v": "fixed"
+						},
+						"kind": "frame",
+						"fill": [
+							{
+								"solid": "ff0000",
+								"a": 1
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "1:9",
+				"name": "Scroller",
+				"box": [
+					40,
+					300,
+					500,
+					200
+				],
+				"kind": "scroll",
+				"layout": {
+					"dir": "V",
+					"gap": 10,
+					"padding": [
+						0,
+						0,
+						0,
+						0
+					],
+					"align": [
+						"MIN",
+						"MIN"
+					],
+					"wrap": false
+				},
+				"clip": true,
+				"children": [
+					{
+						"id": "1:10",
+						"name": "RowA",
+						"box": [
+							0,
+							0,
+							500,
+							120
+						],
+						"sizing": {
+							"h": "fixed",
+							"v": "fixed"
+						},
+						"kind": "frame",
+						"fill": [
+							{
+								"token": "Neon"
+							}
+						]
+					},
+					{
+						"id": "1:11",
+						"name": "RowB",
+						"box": [
+							0,
+							130,
+							500,
+							120
+						],
+						"sizing": {
+							"h": "fixed",
+							"v": "fixed"
+						},
+						"kind": "frame",
+						"fill": [
+							{
+								"solid": "4d4d4d",
+								"a": 1
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "1:12",
+				"name": "Badge",
+				"box": [
+					1700,
+					40,
+					120,
+					48
+				],
+				"kind": "template",
+				"fill": [
+					{
+						"solid": "e63333",
+						"a": 1
+					}
+				],
+				"component": {
+					"key": "badge-key",
+					"name": "Badge",
+					"variant": {},
+					"main": false
+				}
+			},
+			{
+				"id": "quadro:components",
+				"name": "__Components",
+				"kind": "frame",
+				"box": [
+					0,
+					0,
+					0,
+					0
+				],
+				"visible": false,
+				"children": [
+					{
+						"id": "9:1",
+						"name": "Card",
+						"box": [
+							0,
+							0,
+							400,
+							120
+						],
+						"kind": "frame",
+						"fill": [
+							{
+								"solid": "1a1a33",
+								"a": 1
+							}
+						],
+						"component": {
+							"key": "card-key",
+							"name": "Card",
+							"variant": {},
+							"main": true
+						}
+					},
+					{
+						"id": "9:2",
+						"name": "Badge",
+						"box": [
+							0,
+							0,
+							120,
+							48
+						],
+						"kind": "frame",
+						"fill": [
+							{
+								"solid": "e63333",
+								"a": 1
+							}
+						],
+						"component": {
+							"key": "badge-key",
+							"name": "Badge",
+							"variant": {},
+							"main": true
+						}
+					}
+				]
+			}
+		]
+	},
+	"images": {
+		"c5982ace24b206d81c2d23d3e9a17a2323ec590e79c10538984f850b7221894f": {
+			"w": 96,
+			"h": 96
+		},
+		"9909ec831e2cf6d0c73fb5480f31945a80987a13faee005704166cb53a26ceca": {
+			"w": 280,
+			"h": 160
+		}
+	},
+	"tokens": {
+		"gradients": {
+			"Neon": {
+				"rotation": 90,
+				"stops": [
+					[
+						0,
+						"ff0080",
+						0.25
+					],
+					[
+						1,
+						"0080ff",
+						1
+					]
+				]
+			}
+		}
+	},
+	"warnings": [
+		"Rich: mixed text styles, using the first",
+		"Card: inner shadow dropped (container)"
+	]
+}

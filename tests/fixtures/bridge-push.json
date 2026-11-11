@@ -1,0 +1,77 @@
+{
+	"version": 1,
+	"source": {
+		"fileKey": "contract",
+		"nodeId": "2:1",
+		"name": "Contract",
+		"exportedAt": "1970-01-01T00:00:00.000Z"
+	},
+	"root": {
+		"id": "2:1",
+		"name": "Contract",
+		"box": [
+			0,
+			0,
+			320,
+			200
+		],
+		"kind": "frame",
+		"fill": [
+			{
+				"solid": "000000",
+				"a": 1
+			}
+		],
+		"children": [
+			{
+				"id": "2:2",
+				"name": "Icon",
+				"box": [
+					10,
+					10,
+					64,
+					64
+				],
+				"kind": "image",
+				"fill": [
+					{
+						"image": "66a6757151f8ee55db127716c7e3dce0be8074b64e20eda542e5c1e46ca9c41e",
+						"scale": "fill"
+					}
+				]
+			},
+			{
+				"id": "2:3",
+				"name": "Glow",
+				"box": [
+					100,
+					10,
+					50,
+					50
+				],
+				"kind": "image",
+				"fill": [
+					{
+						"image": "787c798e39a5bc1910355bae6d0cd87a36b2e10fd0202a83e3bb6b005da83472",
+						"scale": "fill"
+					}
+				]
+			}
+		]
+	},
+	"images": {
+		"66a6757151f8ee55db127716c7e3dce0be8074b64e20eda542e5c1e46ca9c41e": {
+			"w": 128,
+			"h": 128,
+			"asset": "decal:1"
+		},
+		"787c798e39a5bc1910355bae6d0cd87a36b2e10fd0202a83e3bb6b005da83472": {
+			"w": 100,
+			"h": 100,
+			"asset": "decal:2"
+		}
+	},
+	"tokens": {
+		"gradients": {}
+	}
+}
